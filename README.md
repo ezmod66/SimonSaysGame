@@ -11,7 +11,7 @@ Fun play on the Simon Says game. Is your memory of sequences good? Come test how
   <li>See how far you can get with out getting frustrated</li>
 </ul>
 
-<a href="http://">Click here to play the live preview</a>
+<a href="https://ezmod66.github.io/SimonSaysGame/">Click here to play the live preview</a>
 
 <hr>
 <Strong>Note to Self</Strong><br>
