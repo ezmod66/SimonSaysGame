@@ -1,3 +1,12 @@
+/** page loads for first time
+ * - check if first time game loaded
+ * - if so start setup.(change title and game level to current, start the sequence, change bool to true)
+ * - next sequence(reset user patterns[], change level to 1,get random num 1-4, get colour from [] where num =, add colour to game pattern, animate colour and play sound for user)
+ * - wait for user selection
+ * - get id of user selection(its string of colour), add to user pattern. Play colour sound, add animation on click.
+ * - check user selection. if true play next sequence if no play sound incorrect, change background color, change h1 and p elements, reset gamepattern user pattern and level,
+ * - wait for user input. 
+ */
 var buttonColours = ["red", "blue", "green", "yellow"];
 var gamePattern = [];
 var userClickedPattern = [];
@@ -6,7 +15,7 @@ var level = 0;
 
 $(document).keypress(function () {
     if (!gameStarted) {
-
+        //change text, start sequence game started = true
         $("#level-title").text("Level " + level);
         nextSequence();
         gameStarted = true;
@@ -27,6 +36,7 @@ $(".btn").click(function () {
 });
 
 function nextSequence() {
+    //reset user clicked patterns, start at level 1, get random num and colour, add to game pattern and anime on screen for user to follow.
     userClickedPattern = []
 
     level++;
@@ -77,7 +87,7 @@ function CheckUserAnswer(userCurrentLevel) {
         $("body").addClass("game-over");
         //added mild taunt
         $("h1").text("Game Over, Press Any Key to Restart");
-        $("P").text("Unlucky :^), Guess it wasnt");
+        $("P").text("Unlucky :^), Guess it wasnt. Want to try again?").delay(200).fadeOut('slow').delay(100).fadeIn('slow').delay(200).fadeOut('slow').delay(100).fadeIn('slow');
         setTimeout(function () {
             $("body").removeClass("game-over")
         },400)

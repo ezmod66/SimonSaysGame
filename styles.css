@@ -2,14 +2,14 @@ body {
   text-align: center;
   background-color: #011F3F;
 }
-
+ /* main heading text */
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
   margin:  5%;
   color: #FEF2BF;
 }
-
+ /* mily taunting on game game screen */
 .mild-taunt {
   font-family: 'Press Start 2P', cursive;
   margin:  5%;
@@ -23,7 +23,7 @@ body {
   margin: auto;
 
 }
-
+ /* btn style */
 .btn {
   margin: 25px;
   display: inline-block;
@@ -32,12 +32,12 @@ body {
   border: 10px solid black;
   border-radius: 20%;
 }
-
+ /* game over animation */
 .game-over {
   background-color: red;
   opacity: 0.8;
 }
-
+ /* Tile colours */
 .red {
   background-color: red;
 }
@@ -53,7 +53,7 @@ body {
 .yellow {
   background-color: yellow;
 }
-
+ /* press animation */
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
