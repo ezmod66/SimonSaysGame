@@ -26,6 +26,6 @@ Frameworks & Libraries Used
 Concepts Covered <br>
 <ul>
   <li>On click through css class</li>
-  <li>Jquery animation, addClass, Remove Class with time out</li>
+  <li>Jquery animation, addClass, Remove Class with delay, Rade in, Fade out</li>
   <li> Made use of audio files</li>
 </ul>
