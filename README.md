@@ -29,3 +29,4 @@ Concepts Covered <br>
   <li>Jquery animation, addClass, Remove Class with delay, Fade in, Fade out</li>
   <li> Made use of audio files</li>
 </ul>
+<hr>
